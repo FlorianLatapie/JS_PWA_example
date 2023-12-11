@@ -1,7 +1,7 @@
 {
     "name": "my_app_name for user ",
     "short_name": "shot app name",
-    "start_url": "/",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#000",
     "theme_color": "#000",
