@@ -1,3 +1,3 @@
-self.addEventListener('install', function(event) {});
-self.addEventListener('fetch', function(event) {});
-self.addEventListener('activate', function(event) {});
+self.addEventListener('install', function(event) {console.log('SW installed', event);});
+self.addEventListener('fetch', function(event) {console.log('SW fetched', event);});
+self.addEventListener('activate', function(event) {console.log('SW activated', event);});
