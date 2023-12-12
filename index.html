@@ -4,8 +4,30 @@
     <title>Hello World! PWA</title>
     <link rel="manifest" href="./my_app_name.webmanifest">
     <link rel="icon" href="./app.png">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+            .then(function(registration) {
+                console.log('Service worker registration succeeded:', registration);
+            }).catch(function(error) {
+                console.log('Service worker registration failed:', error);
+            });
+        } else {
+            console.log('Service workers are not supported.');
+        }
+    </script>
 </head>
 <body>
     <h1>Hello World!</h1>
+    <p>This is a simple example of a Progressive Web App.</p>
+    <p>You can install it on your home screen and launch it like a regular app.</p>
+    <p id="deviceInfo"></p>
+    <script>
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            document.getElementById('deviceInfo').innerHTML = 'Launched: Installed (Standalone)';
+        } else {
+            document.getElementById('deviceInfo').innerHTML = 'Launched: Browser Tab';
+        }
+    </script>
 </body>
 </html>
