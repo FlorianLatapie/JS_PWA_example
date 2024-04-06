@@ -7,3 +7,7 @@ App icon from [Flaticon](https://www.flaticon.com/fr/icones-gratuites/applicatio
 See the [live demo](https://florianlatapie.github.io/JS_PWA_example/).
 
 Consider looking at this repo : [github-pages-pwa](https://github.com/codepo8/github-page-pwa) for more information.
+
+Very good tools to fine-tune your PWA. [PWABuilder](https://www.pwabuilder.com/)
+
+Best documentation : [Progressive web apps - MDN web docs]https://developer.mozilla.org/docs/Web/Progressive_web_apps
